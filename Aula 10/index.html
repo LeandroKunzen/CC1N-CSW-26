@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 09</title>
+    <style>
+        table,
+        td,
+        th {
+            border: 3px solid;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+    <table>
+        <tbody>
+            <tr>
+                <td><label for="nome">Nome:</label></td>
+                <td><input type="text" name="nome" id="nome" size="20" maxlength="30" value=""
+                        placeholder="Digite seu nome"></td>
+            </tr>
+            <tr>
+                <td><label for="email">E-mail Pessoal:</label></td>
+                <td><input type="email" name="email" id="email" size="20"></td>
+            </tr>
+            <tr>
+                <td><label for="email patter">E-mail (patter):</label></td>
+                <td><input type="email" name="email patter" id="email patter" size="20" value=""
+                        placeholder="Digite seu email com @"></td>
+            </tr>
+            <tr>
+                <td><label for="senha">Senha:</label></td>
+                <td><input type="password" name="password" id="password" size="20" maxlength="20"></td>
+            </tr>
+            <tr>
+                <td><label for="idade">Idade:</label></td>
+                <td><input type="text" name="age" id="age" size="10" maxlength="3"></td>
+            </tr>
+            <tr>
+                <td colspan="2">Deixe um comentário: <br><textarea name="comentário" id="comentário" cols="43"
+                        rows="6"></textarea></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="materia-interesse">Matéria de interessse: </label>
+                    <br>
+                    <input type="checkbox" name="backend" value="backend"> Backend
+                    <br>
+                    <input type="checkbox" name="frontend" value="frontend"> Frontend
+                    <br>
+                    <input type="checkbox" name="fullstack" value="fullstack"> fullstack
+                </td>
+                <td>
+                    <label for="tipo-viagem">Tipo de Viagem: </label>
+                    <br>
+                    <input type="radio" id="negocios" name="opcoes" value="negocios"> Negócios
+                    <br>
+                    <input type="radio" id="lazer" name="opcoes" value="lazer"> Lazer
+                    <br>
+                    <input type="radio" id="turismo" name="opcoes" value="turismo"> Turismo
+                    <br>
+                    <input type="radio" id="academico" name="opcoes" value="academico"> Acadêmico
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="esporte-favorito">Esporte Favorito: </label>
+                    <select name="esportes" id="esportes" size="4" multiple>
+                        <option value="futebol">Futebol</option>
+                        <option value="basquete">Basquete</option>
+                        <option value="volei">Vôlei</option>
+                        <option value="tenis">Tênis</option>
+                    </select>
+                </td>
+                <td>
+                    <label for="investimentos">Investimentos</label>
+                    <select name="investimentos" size="1">
+                        <option value="" disabled selected>Selecione</option>
+                        <option value="" disabled>Baixo Risco</option>
+                        <option value="poupanca">Poupança</option>
+                        <option value="cdb">CDB</option>
+                        <option value="tesouro-direto">Tesouro Direto</option>
+                        <option value="fundos-mobiliarios">Fundos Mobiliários</option>
+                        <option value="cdi">CDI</option>
+                        <option value="debentures">Debêntures</option>
+                        <option value="criptomoedas">Criptomoedas</option>
+                        <option value="acoes">Ações</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Escolha uma cor: </td>
+                <td><label for="arquivo">Selecione um arquivo:</label> <input type="button" value="Escolher Arquivo"> Nenhum arquivo escolhido</td>
+            </tr>
+            <tr>
+                <td colspan="2"><label for="datetime">Data e Hora envio: </label> <input type="datetime-local"></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Enviar"></td>
+                <td><input type="reset" value="Limpar" id="Limpar"></td>
+            </tr>
+        </tbody>
+    </table>
+    </form>
+</body>
+
+</html>
