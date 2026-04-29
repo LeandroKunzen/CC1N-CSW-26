@@ -1,0 +1,77 @@
+body {
+    font-family: verdana;
+}
+
+.primeiro {
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    text-align: center; 
+    padding: 5px;
+    &:hover > p {
+        color: rgb(255, 255, 255);
+        cursor: default;
+        background-color: black;
+        border-radius: 5px;
+        padding: 5px;
+    }
+}
+
+.segundo > a {
+    color: black;
+    text-decoration: none;
+}
+
+/* Spotify */
+.spotify {
+    &:hover {
+        color: forestgreen;
+    }
+}
+
+.spotify::after {
+    content: ' *';
+}
+
+.spotify::before {
+    content: '*♬ ';
+}
+
+/* Youtube */
+.youtube {
+    &:hover {
+        color: red;
+    }
+}
+
+.youtube::after {
+    content: ' *';
+}
+
+.youtube::before {
+    content: '*♬ ';
+}
+
+/* Amazon */
+.amazon {
+    &:hover {
+        color: yellow;
+    }
+}
+
+.amazon::after {
+    content: ' *';
+}
+
+.amazon::before {
+    content: '*♬ ';
+}
+
+#escondido {
+    color: white;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    &:hover {
+        color: black;
+    }
+}
