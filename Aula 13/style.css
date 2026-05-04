@@ -1,0 +1,35 @@
+body {
+        /* FlexBox */
+    display: flex;
+    justify-content: center;
+        /* Aparência */
+    background-image: linear-gradient(0deg, #000000, #a200ff96);
+    background-attachment: fixed;
+    font-family: verdana;
+    height: 100vh;
+    padding-top: 50px;
+}
+
+.primeiro {
+    /* FlexBox */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* Aparência */
+    background-color: #ffffff;
+    padding: 10px;
+    width: 40%;
+    height: 50%;
+    border-radius: 100px;
+    transition: 0.3s;
+    &:hover {
+        transform: scale(1,1);
+    }
+}
+
+#item1 {
+    color: #a200ff96;
+
+}
